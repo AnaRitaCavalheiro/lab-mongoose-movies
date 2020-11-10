@@ -1,0 +1,19 @@
+<h2>Editing {{celebrity.name}}</h2>
+{{!-- pre populate the input fields --}}
+<form method="POST" action="/celebrity/{{celebrity._id}}/edit">
+  <label>
+    Name
+    <input type="text" name="name" value="{{celebrity.name}}">
+  </label>
+  <label>
+    Occupation
+    <input type="text" name="occupation" value="{{celebrity.occupation}}">
+  </label>
+  <label>
+    CatchPhrase
+    <input type="text" name="catchPhrase" value="{{celebrity.catchPhrase}}">
+  </label>
+
+
+  <button type="submit">Update</button>
+</form>

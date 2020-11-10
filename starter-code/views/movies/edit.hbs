@@ -1,0 +1,18 @@
+<h2>Editing {{movie.title}}</h2>
+{{!-- pre populate the input fields --}}
+<form method="POST" action="/celebrity/{{movie._id}}/edit">
+  <label>
+    Title
+    <input type="text" name="title" value="{{movie.title}}">
+  </label>
+  <label>
+    Genre
+    <input type="text" name="genre" value="{{movie.genre}}">
+  </label>
+  <label>
+    Plot
+    <textarea type="description" name="plot" cols="30" rows="4">{{movie.Plot}}</textarea>
+  </label>
+
+  <button type="submit">Update</button>
+</form>
